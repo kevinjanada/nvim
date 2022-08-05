@@ -18,3 +18,4 @@ vim.g.mapleader = " "
 
 vim.g.netrw_winsize = 30
 
+vim.api.nvim_command("set mouse=a")

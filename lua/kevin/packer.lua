@@ -10,4 +10,9 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'tomlion/vim-solidity'
   use 'leafgarland/typescript-vim'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 end)

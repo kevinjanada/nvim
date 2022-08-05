@@ -17,3 +17,4 @@ vim.opt.wrap = false
 vim.g.mapleader = " "
 
 vim.g.netrw_winsize = 30
+

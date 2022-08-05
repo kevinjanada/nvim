@@ -7,12 +7,26 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'neovim/nvim-lspconfig'
-  use 'folke/tokyonight.nvim'
-  use 'tomlion/vim-solidity'
-  use 'leafgarland/typescript-vim'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- colorschemes
+  use 'folke/tokyonight.nvim'
+
+  -- syntax highlighting
+  use 'tomlion/vim-solidity'
+  use 'leafgarland/typescript-vim'
+
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip"
+  -- snippets
+  use "L3MON4D3/LuaSnip"
 end)

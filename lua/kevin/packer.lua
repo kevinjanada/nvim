@@ -12,6 +12,12 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+  use 'tpope/vim-fugitive'
 
   -- colorschemes
   use 'folke/tokyonight.nvim'
@@ -19,6 +25,8 @@ return require('packer').startup(function(use)
   -- syntax highlighting
   use 'tomlion/vim-solidity'
   use 'leafgarland/typescript-vim'
+  use 'peitalin/vim-jsx-typescript'
+  --use 'HerringtonDarkholme/yats.vim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"

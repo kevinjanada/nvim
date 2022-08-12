@@ -18,6 +18,12 @@ return require('packer').startup(function(use)
   }
 
   use 'tpope/vim-fugitive'
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
   -- colorschemes
   use 'folke/tokyonight.nvim'

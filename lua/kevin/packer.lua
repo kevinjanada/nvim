@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
   use 'leafgarland/typescript-vim'
   use 'peitalin/vim-jsx-typescript'
   --use 'HerringtonDarkholme/yats.vim'
+  use 'mracos/mermaid.vim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"

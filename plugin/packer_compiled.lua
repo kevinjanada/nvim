@@ -105,6 +105,11 @@ _G.packer_plugins = {
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["mermaid.vim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/mermaid.vim",
+    url = "https://github.com/mracos/mermaid.vim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/nvim-cmp",

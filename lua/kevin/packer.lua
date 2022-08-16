@@ -34,6 +34,8 @@ return require('packer').startup(function(use)
   use 'peitalin/vim-jsx-typescript'
   --use 'HerringtonDarkholme/yats.vim'
   use 'mracos/mermaid.vim'
+  use 'uiiaoo/java-syntax.vim'
+  use 'simrat39/rust-tools.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"
